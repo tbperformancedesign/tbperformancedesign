@@ -1,0 +1,106 @@
+body {
+	margin:0;
+    width: 100%;
+    height: 100%;
+}
+
+#mainContainer {
+	position:absolute;
+	width: 100%;
+	height: 100%; 
+	background-color: #a0aaa0;
+	overflow:hidden;
+
+	}
+
+
+
+
+#logo {
+    position: absolute;    
+    background: url(image/TB_Logo_claim_RGB_yellow.svg) no-repeat; 
+    background-position: center top ;
+    background-size: contain;
+    width: calc(((100vw + 100vh) / 34 ) * 3 );
+    height: calc(((100vw + 100vh) / 34 ) * 3 );
+    max-width: 50vw;
+    right: calc(((100vw + 100vh) / 34 ));
+    top: 0px;
+    z-index: 100;
+    
+}
+
+
+
+#header {
+    position: sticky;
+    top: 0;
+    background-color:#778075 ;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction:row;
+    padding: calc(((100vw + 100vh) / 34 ) / 4); 
+    opacity:1;
+}
+
+#burger{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor:  pointer;
+}
+
+.bar{
+    position: relative;    
+    width: calc((((100vh + 100vw) / 34) / 2) * 1.5);
+    height: calc(((100vh + 100vw) / 34) / 10);
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+}
+
+#bar1 {
+    background-color: #d2ff00;    
+    z-index: 1;
+    
+}
+#bar2 {
+    background-color: #778075;    
+    z-index: 0;
+}
+#bar3 {
+    background-color: #d2ff00;    
+    z-index: 1;
+    
+}
+#bar4 {
+    background-color: #778075;    
+    z-index: 0;
+    
+}
+#bar5 {
+    background-color: #d2ff00;    
+    z-index: 1;
+    
+}
+
+
+#comingsoon{
+    position: absolute;    
+    background:url(image/comingsoon.svg)no-repeat; 
+    background-position: left  bottom;
+    height: calc(((100vw + 100vh) / 34 ) * 3.75);    
+    width: inherit;
+    max-height: 50vh;
+    bottom: 0;
+    z-index: 1;
+}   
+
+
+
+
+
+
+
+
+
+

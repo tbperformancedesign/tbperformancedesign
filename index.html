@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coming Soon</title>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+	<link type="text/css" rel="stylesheet" href="style.css"> 
+         
+  </head>      
+  <body>  
+      
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+           
+       
+<div id="mainContainer"> 
+    <div id="header">
+        <div id="burger">      
+            <div id="bar1" class="bar"></div>  
+            <div id="bar2" class="bar"></div>  
+            <div id="bar3" class="bar"></div>    
+            <div id="bar4" class="bar"></div>   
+            <div id="bar5" class="bar"></div>     
+        </div>    
+    </div>    
+    <div id="logo"></div>  
+    
+                <div id="comingsoon"></div> 
+
+     
+                 
+    
+       
+</div>          
+                  
+                   
+              
+     
+    <script> 
+    const burger = document.getElementById('burger');  
+    let isOpen = false;  
+ 
+    burger.addEventListener('click', () => {
+      if (isOpen) { 
+        gsap.to(burger, { pointerEvents: "none", duration:0}); 
+        gsap.to(bar1, {rotate: 0,y:0, duration: 0.25, delay:0,ease:"power1.InOut",}); 
+        gsap.to(bar3, {width:"auto", duration: 0.25, delay:0.25,ease:"power1.InOut",}); 
+        gsap.to(bar5, {rotate: 0,y:0, duration: 0.25,ease:"power1.InOut",});
+        gsap.to(logo, {yPercent:0, duration: 0.5});    
+        gsap.to(burger, { pointerEvents: "auto", duration:0, delay:0.5}); 
+ 
+  
+        isOpen = false; 
+      } else {   
+        gsap.to(burger, { pointerEvents: "none", duration:0}); 
+        gsap.to(bar1, {rotate: 45,y:"200%", duration: 0.25, delay:0.25,ease:"power1.InOut",});  
+        gsap.to(bar3, {width: 0, duration: 0.25, delay:0,ease:"power1.InOut",});
+        gsap.to(bar5, {rotate: -45,y:"-200%", duration: 0.25, delay:0.25,ease:"power1.InOut",}); 
+        gsap.to(logo, {yPercent:-100, duration: 0.5});  
+        gsap.to(burger, { pointerEvents: "auto", duration:0, delay:0.5}); 
+      
+          
+        isOpen = true;
+      }   
+    }); 
+  </script> 
+       
+       
+      
+  
+  </body>   
+    
+     
+     
+</html> 
+ 
+    
