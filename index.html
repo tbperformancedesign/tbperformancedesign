@@ -33,7 +33,7 @@
         <div id="holder"> 
             <img src="image/balkenyellow.svg" id="balkenyellow" >
         </div>
-        <div id="holder">  
+        <div id="holder">   
             <img src="image/coming.svg" id="coming">
         </div> 
         <div id="holder"> 
@@ -72,8 +72,18 @@
            
        
                      
-</div>                        
-                           
+</div>   
+      
+      <script>
+      
+        gsap.to(legalgreen, {duration:0, xPercent:-100, opacity:1, dely:0});  
+        gsap.to(contactgreen, {duration:0, xPercent:-100, opacity:1,dely:0});  
+        gsap.to(balkengreen, {duration:0, xPercent:-100,opacity:1, dely:0});  
+          
+        gsap.to(legalyellow, {duration:0, xPercent:-100, dely:0});  
+        gsap.to(contactyellow, {duration:0, xPercent:-100, dely:0});   
+      </script> 
+                             
                                      
                   
       
@@ -93,12 +103,12 @@
         gsap.to(coming, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.55});  
         gsap.to(balkenyellow, {duration: 0.5, xPercent:0,ease:"power4.Out",delay:0.55});    
           
-        gsap.to(legalgreen, {duration: 0.5, xPercent:0,ease:"power4.In",delay:0.1});  
-        gsap.to(contactgreen, {duration: 0.5, xPercent:0,ease:"power4.In", delay:0.05});  
-        gsap.to(balkengreen, {duration: 0.5, xPercent:0,ease:"power4.In", delay:0.05});  
+        gsap.to(legalgreen, {duration: 0.5, xPercent:-100,ease:"power4.In",delay:0.1});  
+        gsap.to(contactgreen, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.05});  
+        gsap.to(balkengreen, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.05});  
           
-        gsap.to(legalyellow, {duration: 0.5, xPercent:0,ease:"power4.In",delay:0.1});  
-        gsap.to(contactyellow, {duration: 0.5, xPercent:0,ease:"power4.In", delay:0.05});  
+        gsap.to(legalyellow, {duration: 0.5, xPercent:-100,ease:"power4.In",delay:0.1});  
+        gsap.to(contactyellow, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.05});  
       
         gsap.to(burger, { pointerEvents: "auto", duration:0, delay:1.1});   
     
@@ -115,12 +125,12 @@
         gsap.to(coming, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0});  
         gsap.to(balkenyellow, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0});  
           
-        gsap.to(legalgreen, {xPercent:100, ease:"power4.Out", duration: 0.5, delay:0.6});  
-        gsap.to(contactgreen, {xPercent:100, ease:"power4.Out", duration: 0.5, delay:0.55});  
-        gsap.to(balkengreen, {duration: 0.5, xPercent:100, ease:"power4.Out", delay:0.55});  
+        gsap.to(legalgreen, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.6});  
+        gsap.to(contactgreen, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.55});  
+        gsap.to(balkengreen, {duration: 0.5, xPercent:0, ease:"power4.Out", delay:0.55});  
           
-           gsap.to(legalyellow, {xPercent:100, ease:"power4.Out", duration: 0.5, delay:0.6});  
-       gsap.to(contactyellow, {xPercent:100, ease:"power4.Out", duration: 0.5, delay:0.55});  
+           gsap.to(legalyellow, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.6});  
+       gsap.to(contactyellow, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.55});  
           
        gsap.to(burger, { pointerEvents: "auto", duration:0, delay:1.1});  
       

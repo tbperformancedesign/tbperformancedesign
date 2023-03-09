@@ -141,8 +141,7 @@ body {
     background-size: cover;
     height: auto;
     max-height: calc(((100vh + 100vw) / 34) * 1.5);
-    opacity: 1;
-    transform: translateX(-100%);
+    opacity: 0;
     cursor: pointer;
 
 }
@@ -155,7 +154,6 @@ body {
     max-height: calc(((100vh + 100vw) / 34) * 1.5);
     opacity: 0;
     cursor: pointer;
-        transform: translateX(-100%);
 
 
 }
@@ -166,9 +164,8 @@ body {
     background-size: cover;
     height: auto;
     max-height: calc(((100vh + 100vw) / 34) * 1.5);
-    opacity: 1;
+    opacity: 0;
     cursor: pointer;
-        transform: translateX(-100%);
 
     
 } 
@@ -181,7 +178,6 @@ body {
     max-height: calc(((100vh + 100vw) / 34) * 1.5);
     opacity: 0;
     cursor: pointer;
-        transform: translateX(-100%);
 
     
 } 
@@ -195,8 +191,7 @@ body {
     background-size: cover;
     height: inherit;
     max-height: calc(((100vh + 100vw) / 34) / 4);
-    opacity: 1;   
-    transform: translateX(-100%);
+    opacity: 0;   
 
 
 }
