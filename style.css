@@ -1,16 +1,20 @@
+
+
+
 body {
 	margin:0;
     width: 100%;
     height: 100%;
+    	background-color: #a0aaa0;
+
 }
 
 #mainContainer {
 	position:absolute;
 	width: 100%;
 	height: 100%; 
-	background-color: #a0aaa0;
-	overflow:hidden;
     min-height: 600px;
+    overflow: visible;
 	}
 
 
@@ -32,16 +36,29 @@ body {
 
 
 
+
 #header {
     position: sticky;
     top: 0;
     background-color:#778075 ;
     display: flex;
-    justify-content:flex-start;
+    justify-content:space-between;
     flex-direction:row;
     padding: calc(((100vw + 100vh) / 34 ) / 4); 
     opacity:1;
 }
+
+#logosmall{
+    display:none;
+    background: url(image/TB_Logo_claim_small_RGB_yellow.svg)no-repeat;
+    background-position: right;
+    position: relative;    
+    height: calc(((100vh + 100vw) / 34) / 2);
+    width: calc(1.5603 * (((100vh + 100vw) / 34) / 2));
+    opacity: 0;
+
+}
+
 
 #burger{
   display: flex;
@@ -135,7 +152,7 @@ body {
 
 
  
-#legalgreen{
+#imprintgreen{
     display: flex;
     position: relative;
     background-size: cover;
@@ -146,7 +163,7 @@ body {
 
 }
 
-#legalyellow{
+#imprintyellow{
     display: flex;
     position: relative;
     background-size: cover;
@@ -196,7 +213,50 @@ body {
 
 }
 
+#copyholder{
+    position: absolute;
+    display: block;
+    overflow: visible;
+    width: calc(100vw-(((100vw + 100vh) / 34 ) * 2 ));
+    height: calc(100vh-(((100vw + 100vh) / 34 ) * 2 ));
+    top: 0;
+    left: 0;
+    margin-top: calc(((100vw + 100vh) / 34 ) * 2 );    
+    margin-left: calc(((100vw + 100vh) / 34 ) * 1 );
+    margin-right: calc(((100vw + 100vh) / 34 ) * 1 );
+    overflow: hidden;
+    
+}
 
+@font-face {
+    font-family: 'Suisse'; /*a name to be used later*/
+    src: url('SuisseIntl-Medium.otf'); /*URL to font*/
+}
+
+
+p {
+    font-size: max( calc(((100vh + 100vw) / 34) / 3), 12pt);
+    margin-bottom: calc(((100vh + 100vw) / 34) / 3);
+    margin-top: 0;
+    font-family: 'Suisse';
+    color: #788278;
+    line-height: 110%;
+}
+
+h1 {
+    font-size: max( calc(((100vh + 100vw) / 34) / 2), 18pt);
+    margin-top: 0;
+    margin-bottom: calc(((100vh + 100vw) / 34) / 4);
+    font-family: 'Suisse';
+    color: #788278;
+
+}
+
+h2{
+    font-size: 0;
+    margin-top: 0;
+    margin-bottom: calc(((100vw + 100vh) / 34 ) * 1 );    
+}
 
 
 
