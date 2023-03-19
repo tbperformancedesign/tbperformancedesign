@@ -216,13 +216,26 @@ var elem = document.getElementById('imprintgreen');
   </script>  
       
       
-      <script>
+     <script>
       
     document.getElementById("imprintgreen").addEventListener("click", openlegal);
 
 function openlegal() {
-  window.location = "legal.html";     
+  if (isMobileDevice()) {
+    setTimeout(function() {
+      window.location = "legal.html";
+    }, 500);
+  } else {
+    setTimeout(function() {
+      window.location = "legal.html";
+    }, 0);
+  }
 }
+
+function isMobileDevice() {
+  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+
       
       </script>
       
