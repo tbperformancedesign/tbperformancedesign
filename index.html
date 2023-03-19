@@ -177,12 +177,12 @@ var elem = document.getElementById('contactgreen');
     gsap.to(contactyellow, {opacity:1,ease:"power1.Out", duration: 0.25});  
       
   } 
-             
+        
          
   </script>     
        
       <script>
-         
+        
 var elem = document.getElementById('imprintgreen'); 
   elem.addEventListener('mouseover', mouseOver); 
   elem.addEventListener('mouseout', mouseOut);
@@ -197,36 +197,24 @@ var elem = document.getElementById('imprintgreen');
     gsap.to(imprintgreen, {opacity:1,ease:"power1.In", duration: 0.25});  
     gsap.to(imprintyellow, {opacity:1,ease:"power1.Out", duration: 0.25});   
       
-  } 
-         
-         
-  </script>   
+  }
+        
+        
+  </script>  
       
       
       <script>
       
-   document.getElementById("imprintgreen").addEventListener("click", function() {
-  setTimeout(openlegal, 0); 
-});
+    document.getElementById("imprintgreen").addEventListener("click", openlegal);
 
 function openlegal() {
-  window.location = "legal.html";
+  window.location = "legal.html";     
 }
-
+      
       </script>
       
-      <script>
       
-   document.getElementById("imprintgreen").addEventListener("touchstart", function() {
-  setTimeout(openlegalmobile, 3000); 
-});
-
-function openlegalmobile() {
-  window.location = "legal.html";
-}
-
-      </script>
-       
+   
 
           
       
