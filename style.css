@@ -241,6 +241,9 @@ p {
     font-family: 'Suisse';
     color: #788278;
     line-height: 110%;
+    pointer-events: none;
+    text-decoration: none;
+    
 }
 
 h1 {
@@ -249,13 +252,16 @@ h1 {
     margin-bottom: calc(((100vh + 100vw) / 34) / 4);
     font-family: 'Suisse';
     color: #788278;
-
+pointer-events: none;
+    text-decoration: none;
 }
 
 h2{
     font-size: 0;
     margin-top: 0;
-    margin-bottom: calc(((100vw + 100vh) / 34 ) * 1 );    
+    margin-bottom: calc(((100vw + 100vh) / 34 ) * 1 ); 
+    pointer-events: none;
+    text-decoration: none;
 }
 
 
