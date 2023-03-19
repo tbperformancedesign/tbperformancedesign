@@ -242,7 +242,7 @@ p {
     color: #788278;
     line-height: 115%;
     text-transform: uppercase;
-    letter-spacing: calc(((100vh + 100vw) / 34) / 40);
+    letter-spacing: calc(((100vh + 100vw) / 34) / 60);
     word-spacing: calc(((100vh + 100vw) / 34) / 30);
 }
 
