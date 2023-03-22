@@ -19,8 +19,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/EasePack.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
  
- 
-         
+  <div class="loadingscreen">
+    <div id="loadingscreenlogo">
+    </div>
+  </div> 
 <div id="mainContainer" class="pagecontent"> 
     <div id="header">   
         <div id="burger">      
@@ -28,14 +30,14 @@
             <div id="bar2" class="bar"></div>     
             <div id="bar3" class="bar"></div>       
             <div id="bar4" class="bar"></div>      
-            <div id="bar5" class="bar"></div>         
+            <div id="bar5" class="bar"></div>           
         </div>  
         
         <div id="burger">
             <a href="index.html"><div id="logosmall" ></div> </a> 
         </div>
 
-    </div>            
+    </div>             
       
                    <a href="index.html"><div id="logo" ></div> </a> 
 
@@ -96,10 +98,9 @@
                      
 </div> 
       
-      <div class="loadingscreen">
-    <div id="loadingscreenlogo">
-    </div>
-  </div> 
+     
+      
+
        
       <script>
           
@@ -117,12 +118,7 @@
           
         gsap.to(logosmall, {duration:0, opacity:0, display:"none", delay:0});       
           
-        gsap.to(loadingscreenlogo, {duration:0.5, rotation:"180", ease:"power4.Out", delay:0});
-        gsap.to(loadingscreenlogo, {duration:0.5, rotationX:"180", ease:"power4.Out", delay:0.5});
-        gsap.to(loadingscreenlogo, {duration:0.5, rotationY:"180", ease:"power4.Out", delay:1});
-        gsap.to(loadingscreenlogo, {duration:0.5, rotation:"0", ease:"power4.Out", delay:1.5});
-        gsap.to(loadingscreenlogo, {duration:0.5, rotationX:"0", ease:"power4.Out", delay:2});
-        gsap.to(loadingscreenlogo, {duration:0.5, rotationY:"360", ease:"power4.Out", delay:2.5});
+        
  
    
       </script> 

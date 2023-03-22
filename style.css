@@ -302,17 +302,59 @@ h2{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #a0aaa0;
+  background-color: #a0aaa0; 
   z-index: 9999;
+    perspective: calc(((100vw + 100vh) / 34 ) * 3 );;
+    perspective-origin: center;
+
 }
 
 #loadingscreenlogo {
-    background:  url("image/TB_Logo_claim_RGB_yellow_loading.svg") no-repeat; 
+    background:  url("image/TB_Logo_claim_RGB_yellow_loading.png") no-repeat; 
+    background-size: contain;
     width: calc(((100vw + 100vh) / 34 ) * 1.5 ); 
 	height: calc(((100vw + 100vh) / 34 ) * 1.5 ); 
-    transform-origin: 50% 50% 0;
     transform-style: preserve-3d;
-    transform: perspective(calc(((100vw + 100vh) / 34 ) * 3 ))rotateY(0deg);
+    animation: loading-screen 3s ease-out infinite;
+}
+
+
+
+@keyframes loading-screen {
+  0% {
+    transform: rotate(0deg) rotateX(0deg) rotateY(0deg);
+      
+  }
+  16.67% {
+    transform: rotate(180deg)rotateX(0deg) rotateY(0deg);
+  }
+  33.33% {
+    transform: rotate(180deg)rotateX(180deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotate(180deg)rotateX(180deg) rotateY(-180deg);
+  }
+  66.67% {
+    transform: rotate(0deg)rotateX(180deg) rotateY(-180deg);
+  }
+  83.33% {
+    transform: rotate(0deg)rotateX(360deg) rotateY(-180deg);
+  }
+  100% {
+    transform: rotate(0deg)rotateX(360deg) rotateY(0deg);
+  }
+}
+
+
+#test{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 0;
+    top:0;
+    background: url(image/TB_Logo_claim_RGB_yellow_loading.png)no-repeat;
+    z-index: 999;
+    opacity: 1;
 }
 
 
