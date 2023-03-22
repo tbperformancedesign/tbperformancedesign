@@ -332,16 +332,16 @@ h2{
     transform: rotate(180deg)rotateX(180deg) rotateY(0deg);
   }
   50% {
-    transform: rotate(180deg)rotateX(180deg) rotateY(-180deg);
+    transform: rotate(180deg)rotateX(180deg) rotateY(180deg);
   }
   66.67% {
-    transform: rotate(0deg)rotateX(180deg) rotateY(-180deg);
+    transform: rotate(0deg)rotateX(180deg) rotateY(180deg);
   }
   83.33% {
-    transform: rotate(0deg)rotateX(360deg) rotateY(-180deg);
+    transform: rotate(0deg)rotateX(360deg) rotateY(180deg);
   }
   100% {
-    transform: rotate(0deg)rotateX(360deg) rotateY(0deg);
+    transform: rotate(0deg)rotateX(360deg) rotateY(360deg);
   }
 }
 
