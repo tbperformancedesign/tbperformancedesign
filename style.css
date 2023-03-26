@@ -417,6 +417,7 @@ form button{
   color: #a0aaa0;
   pointer-events: none;
 opacity: 1;
+    z-index: 999;
 }
 
 

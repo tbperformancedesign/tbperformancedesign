@@ -99,7 +99,7 @@
   <div id="placeholder">enter mail to get updates</div>
   <input type="email" name="email" id="email" required autocomplete="off" 
          onfocus="document.getElementById('placeholder').style.opacity = '0';" 
-         onblur="document.getElementById('placeholder').style.opacity = '1';">
+         onblur="if (this.value === '') {document.getElementById('placeholder').style.opacity = '1';}">
   <button type="submit">
     <div id="arrow"></div>
     <div id="heart"></div> 
@@ -108,6 +108,7 @@
     <div id="load3"></div>
   </button>
 </form>
+
 
   
  
@@ -385,7 +386,7 @@ form.addEventListener('submit', e => {
         el.disabled = true; 
       });
         document.getElementById('placeholder').style.opacity = '1';
-        document.getElementById('placeholder').textContent = 'Thanks, that worked';
+        document.getElementById('placeholder').textContent = 'Thanksss, that worked';
       form.reset();
       document.getElementById("arrow").style.display = 'none';
       document.getElementById("heart").style.display = 'block';
