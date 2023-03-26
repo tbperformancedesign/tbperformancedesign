@@ -384,7 +384,7 @@ form.addEventListener('submit', e => {
       form.querySelectorAll('input, button').forEach(el => {
         el.disabled = true; 
       });
-
+        document.getElementById('placeholder').style.opacity = '1';
         document.getElementById('placeholder').textContent = 'Thanks, that worked';
       form.reset();
       document.getElementById("arrow").style.display = 'none';
