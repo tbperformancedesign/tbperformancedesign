@@ -386,7 +386,8 @@ form.addEventListener('submit', e => {
         el.disabled = true; 
       });
         document.getElementById('placeholder').style.opacity = '1';
-        document.getElementById('placeholder').textContent = 'Thanksss, that worked';
+        document.getElementById('placeholder').style.color = 'red';
+        document.getElementById('placeholder').textContent = 'Thanks, that worked';
       form.reset();
       document.getElementById("arrow").style.display = 'none';
       document.getElementById("heart").style.display = 'block';
