@@ -380,7 +380,7 @@ form input{
     text-transform: uppercase;
     font-family: 'Suisse';
     text-align: center;
-    color: #788278;
+    color: #a0aaa0;
     border-top-left-radius: calc(((100vw + 100vh) / 34 ) / 5 ); 
     border-bottom-left-radius: calc(((100vw + 100vh) / 34 ) / 5 ); 
 }
@@ -535,13 +535,29 @@ form button{
 }
 
 
-::placeholder{
-    color: #788278;
-    opacity: 1;
+::-webkit-input-placeholder {
+color: #a0aaa0;
+opacity: 1;
+}
+::-moz-placeholder {
+color: #a0aaa0;
+opacity: 1;
+}
+:-ms-input-placeholder {
+color: #a0aaa0;
+opacity: 1;
+}
+:-moz-placeholder {
+color: #a0aaa0;
+opacity: 1;
+}
+::placeholder {
+color: #a0aaa0;
+opacity: 1;
 }
 
 
-::selection { background: #a0aaa0;}
+::selection {color: #a0aaa0; background: #788278;}
 
 
 
