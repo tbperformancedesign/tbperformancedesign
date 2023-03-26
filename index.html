@@ -337,7 +337,7 @@ function isMobileDevice() {
   return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 }
  
-       
+        
       </script>  
 
 <script>
@@ -350,8 +350,8 @@ function isMobileDevice() {
    
 });    
       </script>
-      
-   
+       
+    
    
       <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyt5Gt4M58jTOpdoSqXUvwxXpaL3rm-LwfTWaSd_QDPgxgY7bktQDjezD3cm-vgQzVS/exec'
@@ -369,7 +369,7 @@ function isMobileDevice() {
     submitButton.disabled = true;
         submitButton.style.cursor = 'default';
     fetch(scriptURL, { method: 'POST', body: new FormData(form)}) 
-      .then(response => {
+      .then(response => { 
         form.querySelectorAll('input, button').forEach(el => {
           el.disabled = true;
         });

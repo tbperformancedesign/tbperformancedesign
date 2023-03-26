@@ -380,7 +380,7 @@ form input{
     text-transform: uppercase;
     font-family: 'Suisse';
     text-align: center;
-    color: #a0aaa0;
+    color: #788278;
     border-top-left-radius: calc(((100vw + 100vh) / 34 ) / 5 ); 
     border-bottom-left-radius: calc(((100vw + 100vh) / 34 ) / 5 ); 
 }
@@ -536,12 +536,12 @@ form button{
 
 
 ::placeholder{
-    color: #a0aaa0;
+    color: #788278;
     opacity: 1;
 }
 
 
-::selection { background: #d2ff00; color: #a0aaa0; }
+::selection { background: #a0aaa0;}
 
 
 
