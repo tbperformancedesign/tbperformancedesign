@@ -534,15 +534,23 @@ form button{
     }
 }
 
-
 form input::placeholder {
-    opacity: 1!important;
-    color: red;
+    opacity: 1;
+    color: #a0aaa0;
+}
+form input::-webkit-input-placeholder {
+    opacity: 1;
+    color: #a0aaa0;
 }
 
-form input::-webkit-input-placeholder {
-  opacity: 1 !important;
-    color: red;
+
+form input.submitted::placeholder {
+    opacity: 1;
+    color: #a0aaa0;
+}
+form input.submitted::-webkit-input-placeholder {
+    opacity: 1;
+    color: #a0aaa0;
 }
 
 
