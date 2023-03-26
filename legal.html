@@ -76,13 +76,13 @@
             <img src="image/homeyellow.svg" id="homeyellow"> 
         </div> 
         
-        <div id="holder">  
-            <img src="image/contactyellow.svg" id="contactyellow">
-        </div> 
+        
         <div id="holder">
             <img src="image/imprintyellow.svg" id="imprintyellow"> 
         </div> 
-           
+         <div id="holder">  
+            <img src="image/ppyellow.svg" id="ppyellow">
+        </div>   
     </div> 
          
  
@@ -95,14 +95,14 @@
             <img src="image/homegreen.svg" id="homegreen"> 
         </div> 
        
-        <div id="holder">  
-            <img src="image/contactgreen.svg" id="contactgreen">
-        </div> 
+        
         <div id="holder">
             
             <img src="image/imprintgreen.svg" id="imprintgreen"> 
         </div> 
-        
+        <div id="holder">  
+            <img src="image/ppgreen.svg" id="ppgreen">
+        </div> 
     </div>  
     
        
@@ -121,12 +121,12 @@
       
         gsap.to(homegreen, {duration:0, xPercent:-100, opacity:1, dely:0});  
         gsap.to(imprintgreen, {duration:0, xPercent:-100, opacity:1, dely:0});  
-        gsap.to(contactgreen, {duration:0, xPercent:-100, opacity:1,dely:0});  
+        gsap.to(ppgreen, {duration:0, xPercent:-100, opacity:1,dely:0});  
         gsap.to(balkengreen, {duration:0, xPercent:-100,opacity:1, dely:0});  
        
         gsap.to(homeyellow, {duration:0, xPercent:-100, dely:0});  
         gsap.to(imprintyellow, {duration:0, xPercent:-100, dely:0});  
-        gsap.to(contactyellow, {duration:0, xPercent:-100, dely:0});
+        gsap.to(ppyellow, {duration:0, xPercent:-100, dely:0});
           
          gsap.to(logosmall, {duration:0, opacity:1, display:"block", delay:0});
           
@@ -155,12 +155,12 @@
         gsap.to(copyholder, {opacity:"1", ease:"power4.Out", duration: 0.5, delay:0.55}); 
           
         gsap.to(imprintgreen, {duration: 0.5, xPercent:-100,ease:"power4.In",delay:0.15});  
-        gsap.to(contactgreen, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.1});  
+        gsap.to(ppgreen, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.1});  
         gsap.to(homegreen, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.05});        
         gsap.to(balkengreen, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.05});  
           
         gsap.to(imprintyellow, {duration: 0.5, xPercent:-100,ease:"power4.In",delay:0.15});  
-        gsap.to(contactyellow, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.1});  
+        gsap.to(ppyellow, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.1});  
         gsap.to(homeyellow, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.05});  
       
         gsap.to(burger, { pointerEvents: "auto", duration:0, delay:1.1});   
@@ -180,12 +180,12 @@
  
           
         gsap.to(imprintgreen, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.65});  
-        gsap.to(contactgreen, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.6});  
+        gsap.to(ppgreen, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.6});  
         gsap.to(homegreen, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.55});        
         gsap.to(balkengreen, {duration: 0.5, xPercent:0, ease:"power4.Out", delay:0.55});  
           
         gsap.to(imprintyellow, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.65});  
-        gsap.to(contactyellow, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.6});  
+        gsap.to(ppyellow, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.6});  
         gsap.to(homeyellow, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.55});  
           
        gsap.to(burger, { pointerEvents: "auto", duration:0, delay:1.1});  
@@ -201,19 +201,19 @@
       
       <script>
         
-var elem = document.getElementById('contactgreen'); 
+var elem = document.getElementById('ppgreen'); 
   elem.addEventListener('mouseover', mouseOver); 
   elem.addEventListener('mouseout', mouseOut);
 
   function mouseOver() {
-    gsap.to(contactgreen, {opacity:0,ease:"power1.Out", duration: 0.25});  
-    gsap.to(contactyellow, {opacity:1,ease:"power1.In", duration: 0.25});  
+    gsap.to(ppgreen, {opacity:0,ease:"power1.Out", duration: 0.25});  
+    gsap.to(ppyellow, {opacity:1,ease:"power1.In", duration: 0.25});  
       
   }
 
   function mouseOut() {
-    gsap.to(contactgreen, {opacity:1,ease:"power1.In", duration: 0.25});  
-    gsap.to(contactyellow, {opacity:1,ease:"power1.Out", duration: 0.25});  
+    gsap.to(ppgreen, {opacity:1,ease:"power1.In", duration: 0.25});  
+    gsap.to(ppyellow, {opacity:1,ease:"power1.Out", duration: 0.25});  
       
   } 
         
@@ -292,7 +292,7 @@ function isMobileDevice() {
     document.getElementById("homegreen").addEventListener("click", openhome);
 
 function openhome() {
-  if (isMobileDevice()) {
+  if (isMobileDevice()) { 
     setTimeout(function() {
       window.location = "index.html";
     }, 500);
@@ -300,16 +300,39 @@ function openhome() {
     setTimeout(function() {
       window.location = "index.html";
     }, 0);
-  }
+  } 
 }
 
 function isMobileDevice() {
   return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 }
+ 
+       
+      </script>  
+      
+      <script>
+      
+    document.getElementById("ppgreen").addEventListener("click", openpp);
 
-      
-      </script>   
-      
+function openpp() {
+  if (isMobileDevice()) { 
+    setTimeout(function() {
+      window.location = "privacypolicy.html";
+    }, 500);
+  } else {
+    setTimeout(function() {
+      window.location = "privacypolicy.html";
+    }, 0);
+  } 
+}
+
+function isMobileDevice() {
+  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+ 
+       
+      </script> 
+       
       <script>
      window.addEventListener('load', function() {
   setTimeout(function() {
