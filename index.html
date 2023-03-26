@@ -90,15 +90,25 @@
         </div> 
         <div id="holder">  
             <img src="image/ppgreen.svg" id="ppgreen">
-        </div>
+        </div> 
     </div>    
      
     
      
 <form name="submit-to-google-sheet">
-  <input type="email" name="email" placeholder="enter mail to get updates" required onfocus="this.placeholder=''" onblur="this.placeholder='enter mail to get updates'" autocomplete="off">    
-    <button type="submit"><div id="arrow"></div><div id="heart"></div> <div id="load1" ></div><div id="load2"></div><div id="load3"></div></button>
+  <div id="placeholder">enter mail to get updates</div>
+  <input type="email" name="email" id="email" required autocomplete="off" 
+         onfocus="document.getElementById('placeholder').style.opacity = '0';" 
+         onblur="document.getElementById('placeholder').style.opacity = '1';">
+  <button type="submit">
+    <div id="arrow"></div>
+    <div id="heart"></div> 
+    <div id="load1"></div>
+    <div id="load2"></div>
+    <div id="load3"></div>
+  </button>
 </form>
+
   
  
                          
@@ -361,6 +371,7 @@ const load = document.getElementById('load');
 form.addEventListener('submit', e => {
   e.preventDefault();
   const submitButton = form.querySelector('button[type="submit"]');
+    document.getElementById('placeholder').textContent = '';    
   document.getElementById("load1").style.display = 'block';
   document.getElementById("load2").style.display = 'block';
   document.getElementById("load3").style.display = 'block';
@@ -374,8 +385,7 @@ form.addEventListener('submit', e => {
         el.disabled = true; 
       });
 
-      form.querySelector('input[name="email"]').placeholder = 'Thanks, that worked';
-      form.querySelector('input[name="email"]').classList.add('submitted');
+        document.getElementById('placeholder').textContent = 'Thanks, that worked';
       form.reset();
       document.getElementById("arrow").style.display = 'none';
       document.getElementById("heart").style.display = 'block';
@@ -385,11 +395,6 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error!', error.message)) 
 }); 
-
-const emailInput = form.querySelector('input[name="email"]');
-emailInput.addEventListener('blur', () => {
-  emailInput.placeholder = 'Thanks, that worked'; 
-});
  
 </script>
   
