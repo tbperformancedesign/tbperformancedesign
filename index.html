@@ -102,9 +102,9 @@
   
  
                          
-</div>           
-            
-               
+</div>            
+             
+                
                  
        
        
@@ -354,36 +354,42 @@ function isMobileDevice() {
     
    
       <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyt5Gt4M58jTOpdoSqXUvwxXpaL3rm-LwfTWaSd_QDPgxgY7bktQDjezD3cm-vgQzVS/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const load = document.getElementById('load');
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyt5Gt4M58jTOpdoSqXUvwxXpaL3rm-LwfTWaSd_QDPgxgY7bktQDjezD3cm-vgQzVS/exec';
+const form = document.forms['submit-to-google-sheet'];
+const load = document.getElementById('load');
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    const submitButton = form.querySelector('button[type="submit"]');
-    document.getElementById("load1").style.display = 'block'; 
-    document.getElementById("load2").style.display = 'block'; 
-    document.getElementById("load3").style.display = 'block'; 
-  
-    document.getElementById("arrow").style.display = 'none'; 
-    submitButton.disabled = true;
-        submitButton.style.cursor = 'default';
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)}) 
-      .then(response => { 
-        form.querySelectorAll('input, button').forEach(el => {
-          el.disabled = true;
-        });
-        
-        form.querySelector('input[name="email"]').placeholder = 'Thanks, that worked';
-        form.reset(); 
-        document.getElementById("arrow").style.display = 'none'; 
-        document.getElementById("heart").style.display = 'block'; 
-        document.getElementById("load1").style.display = 'none'; 
-    document.getElementById("load2").style.display = 'none'; 
-    document.getElementById("load3").style.display = 'none';
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  const submitButton = form.querySelector('button[type="submit"]');
+  document.getElementById("load1").style.display = 'block';
+  document.getElementById("load2").style.display = 'block';
+  document.getElementById("load3").style.display = 'block';
+
+  document.getElementById("arrow").style.display = 'none';
+  submitButton.disabled = true;
+  submitButton.style.cursor = 'default';
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      form.querySelectorAll('input, button').forEach(el => {
+        el.disabled = true;
+      });
+
+      form.querySelector('input[name="email"]').placeholder = 'Thanks, that worked';
+      form.reset();
+      document.getElementById("arrow").style.display = 'none';
+      document.getElementById("heart").style.display = 'block';
+      document.getElementById("load1").style.display = 'none';
+      document.getElementById("load2").style.display = 'none';
+      document.getElementById("load3").style.display = 'none';
+    })
+    .catch(error => console.error('Error!', error.message))
+});
+
+const emailInput = form.querySelector('input[name="email"]');
+emailInput.addEventListener('blur', () => {
+  emailInput.placeholder = 'Thanks, that worked';
+});
+
 </script>
   
   </body>   
