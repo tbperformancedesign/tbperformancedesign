@@ -178,13 +178,13 @@ If you would like to receive the newsletter offered on the website, you will be 
             <img src="image/homeyellow.svg" id="homeyellow"> 
         </div> 
         
-        <div id="holder">  
-            <img src="image/ppyellow.svg" id="ppyellow">
-        </div> 
+        
         <div id="holder">
             <img src="image/imprintyellow.svg" id="imprintyellow"> 
         </div> 
-           
+         <div id="holder">  
+            <img src="image/ppyellow.svg" id="ppyellow">
+        </div>   
     </div> 
          
  
@@ -197,14 +197,14 @@ If you would like to receive the newsletter offered on the website, you will be 
             <img src="image/homegreen.svg" id="homegreen"> 
         </div> 
        
-        <div id="holder">  
-            <img src="image/ppgreen.svg" id="ppgreen">
-        </div> 
+         
         <div id="holder">
             
             <img src="image/imprintgreen.svg" id="imprintgreen"> 
         </div> 
-        
+        <div id="holder">  
+            <img src="image/ppgreen.svg" id="ppgreen">
+        </div>
     </div>  
     
        
@@ -239,7 +239,7 @@ If you would like to receive the newsletter offered on the website, you will be 
                                       
                    
       
-    <script>  
+   <script>  
     const burger = document.getElementById('burger');  
     let isOpen = false;  
  
@@ -255,14 +255,15 @@ If you would like to receive the newsletter offered on the website, you will be 
          
         gsap.to(copyholder, {display:"block", duration: 0, delay:0.55});  
         gsap.to(copyholder, {opacity:"1", ease:"power4.Out", duration: 0.5, delay:0.55}); 
-          
-        gsap.to(imprintgreen, {duration: 0.5, xPercent:-100,ease:"power4.In",delay:0.15});  
-        gsap.to(ppgreen, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.1});  
+               
+        gsap.to(ppgreen, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.15});  
+        gsap.to(imprintgreen, {duration: 0.5, xPercent:-100,ease:"power4.In",delay:0.1});  
         gsap.to(homegreen, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.05});        
         gsap.to(balkengreen, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.05});  
+         
           
-        gsap.to(imprintyellow, {duration: 0.5, xPercent:-100,ease:"power4.In",delay:0.15});  
-        gsap.to(ppyellow, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.1});  
+        gsap.to(ppyellow, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.15});  
+        gsap.to(imprintyellow, {duration: 0.5, xPercent:-100,ease:"power4.In",delay:0.1});  
         gsap.to(homeyellow, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.05});  
       
         gsap.to(burger, { pointerEvents: "auto", duration:0, delay:1.1});   
@@ -280,14 +281,13 @@ If you would like to receive the newsletter offered on the website, you will be 
         gsap.to(copyholder, {opacity:"0", ease:"power4.Out", duration: 0.5, delay:0});  
         gsap.to(copyholder, {display:"none", duration: 0, delay:0.5});   
  
-          
-        gsap.to(imprintgreen, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.65});  
-        gsap.to(ppgreen, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.6});  
+        gsap.to(ppgreen, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.65});        
+        gsap.to(imprintgreen, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.6});  
         gsap.to(homegreen, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.55});        
         gsap.to(balkengreen, {duration: 0.5, xPercent:0, ease:"power4.Out", delay:0.55});  
-          
-        gsap.to(imprintyellow, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.65});  
-        gsap.to(ppyellow, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.6});  
+        
+        gsap.to(ppyellow, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.65});  
+        gsap.to(imprintyellow, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.6});  
         gsap.to(homeyellow, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.55});  
           
        gsap.to(burger, { pointerEvents: "auto", duration:0, delay:1.1});  
@@ -302,7 +302,7 @@ If you would like to receive the newsletter offered on the website, you will be 
       
       
       <script>
-        
+         
 var elem = document.getElementById('ppgreen'); 
   elem.addEventListener('mouseover', mouseOver); 
   elem.addEventListener('mouseout', mouseOut);
@@ -315,7 +315,7 @@ var elem = document.getElementById('ppgreen');
 
   function mouseOut() {
     gsap.to(ppgreen, {opacity:1,ease:"power1.In", duration: 0.25});  
-    gsap.to(ppyellow, {opacity:1,ease:"power1.Out", duration: 0.25});  
+    gsap.to(ppyellow, {opacity:0,ease:"power1.Out", duration: 0.25});  
       
   } 
         
@@ -336,7 +336,7 @@ var elem = document.getElementById('imprintgreen');
 
   function mouseOut() {
     gsap.to(imprintgreen, {opacity:1,ease:"power1.In", duration: 0.25});  
-    gsap.to(imprintyellow, {opacity:1,ease:"power1.Out", duration: 0.25});   
+    gsap.to(imprintyellow, {opacity:0,ease:"power1.Out", duration: 0.25});   
       
   }
         
@@ -358,7 +358,7 @@ var elem = document.getElementById('homegreen');
 
   function mouseOut() {
     gsap.to(homegreen, {opacity:1,ease:"power1.In", duration: 0.25});  
-    gsap.to(homeyellow, {opacity:1,ease:"power1.Out", duration: 0.25});   
+    gsap.to(homeyellow, {opacity:0,ease:"power1.Out", duration: 0.25});   
       
   }
         
@@ -368,16 +368,16 @@ var elem = document.getElementById('homegreen');
       
      <script>
       
-    document.getElementById("imprintgreen").addEventListener("click", openlegal);
+    document.getElementById("imprintgreen").addEventListener("click", openimprint);
 
-function openlegal() {
+function openimprint() {
   if (isMobileDevice()) {
     setTimeout(function() {
-      window.location = "legal.html";
+      window.location = "imprint.html";
     }, 500);
   } else {
     setTimeout(function() {
-      window.location = "legal.html";
+      window.location = "imprint.html";
     }, 0);
   }
 }
@@ -386,7 +386,7 @@ function isMobileDevice() {
   return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 }
 
-      
+       
       </script>
       
      <script>

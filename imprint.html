@@ -8,52 +8,66 @@
 
 	<link type="text/css" rel="stylesheet" href="style.css">  
          
-  </head> 
-    
-  
-
-    
-  <body>  
-      
+  </head>      
+  <body>   
+       
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/EasePack.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
- 
-  <div class="loadingscreen">
-    <div id="loadingscreenlogo">
-    </div>
-  </div>  
-<div id="mainContainer" class="pagecontent">  
-    <div id="header">   
+              
+         
+<div id="mainContainer">  
+    
+    <div id="copyholder"> 
+<h1> 
+    Impressum 2023
+</h1>       
+<p>        
+    TB Performance Design<br>
+    Tim Beckmann<br>
+    Hermundurenweg 1<br> 
+    22453 Hamburg<br> 
+</p>
+<p>      
+    tel: +&zwj;49(0)&zwj;1746328973<br>   
+    mail: info@tb-performance-design.com<br>
+    web: tb-performancedesign.com<br>
+</p>  
+<p>      
+    VAT-number: &zwj;45 / &zwj;016 / &zwj;03355 
+</p>         
+<br>  <br>   
+<h1>
+    Liability 
+</h1>
+<p>
+    All contents have been created to the best of my knowledge. I do not assume any liability for the correctness, completeness and topicality of the contents.
+</p> 
+<br> <br>           
+<h1>   
+    Copyright  
+</h1> 
+<p>
+    The content and works published on this website are subject to German copyright law.<br> The reproduction, editing, distribution and any kind of utilisation of the intellectual property in ideal and material terms of the author outside the limits of copyright law require the prior written consent of the respective author within the meaning of copyright law.<br> Downloads and copies of this site are only permitted for private and non-commercial use. 
+</p>  
+<h2></h2>          
+ </div>     
+    <div id="header">    
         <div id="burger">      
             <div id="bar1" class="bar"></div>  
             <div id="bar2" class="bar"></div>     
-            <div id="bar3" class="bar"></div>        
-            <div id="bar4" class="bar"></div>      
-            <div id="bar5" class="bar"></div>           
-        </div>  
-        
+            <div id="bar3" class="bar"></div>      
+            <div id="bar4" class="bar"></div>     
+            <div id="bar5" class="bar"></div>         
+        </div> 
         <div id="burger">
             <a href="index.html"><div id="logosmall" ></div> </a> 
         </div>
-
     </div>             
       
-                   <a href="index.html"><div id="logo" ></div> </a> 
- 
-       
-    <div id="mainholder">     
-        <div id="holder"> 
-            <img src="image/balkenyellow.svg" id="balkenyellow" >
-        </div>
-        <div id="holder">   
-            <img src="image/hello.svg" id="hello">
-        </div> 
-        <div id="holder"> 
-            <img src="image/there.svg" id="there"> 
-        </div>
-    </div>  
-     
+                 
+            
+      
       <div id="mainholder"> 
           <div id="holder"> 
             <img src="image/balkengreen.svg" id="balkengreen" > 
@@ -66,11 +80,9 @@
         <div id="holder">
             <img src="image/imprintyellow.svg" id="imprintyellow"> 
         </div> 
-          
-          <div id="holder">  
+         <div id="holder">  
             <img src="image/ppyellow.svg" id="ppyellow">
-        </div> 
-           
+        </div>   
     </div> 
          
  
@@ -79,59 +91,53 @@
             <img src="image/balkengreen.svg" id="balkengreen" > 
         </div>
         <div id="holder">
-             
+            
             <img src="image/homegreen.svg" id="homegreen"> 
         </div> 
+       
         
-         
         <div id="holder">
             
             <img src="image/imprintgreen.svg" id="imprintgreen"> 
         </div> 
         <div id="holder">  
             <img src="image/ppgreen.svg" id="ppgreen">
-        </div>
-    </div>    
-     
+        </div> 
+    </div>  
     
+       
      
-<form name="submit-to-google-sheet">
-  <input type="email" name="email" placeholder="enter mail to get newsletter" required onfocus="this.placeholder=''" onblur="this.placeholder='enter mail to get updates'" autocomplete="off">    
-    <button type="submit"><div id="arrow"></div><div id="heart"></div> <div id="load1" ></div><div id="load2"></div><div id="load3"></div></button>
-</form>
-  
- 
-                         
-</div>           
             
-               
-                 
        
+                      
+</div>   
+      
+      <div class="loadingscreen">
+    <div id="loadingscreenlogo">
+    </div>
+  </div> 
+      
+      <script> 
+      
+        gsap.to(homegreen, {duration:0, xPercent:-100, opacity:1, dely:0});  
+        gsap.to(imprintgreen, {duration:0, xPercent:-100, opacity:1, dely:0});  
+        gsap.to(ppgreen, {duration:0, xPercent:-100, opacity:1,dely:0});  
+        gsap.to(balkengreen, {duration:0, xPercent:-100,opacity:1, dely:0});  
        
-      <script>  
-           
+        gsap.to(homeyellow, {duration:0, xPercent:-100, dely:0});  
+        gsap.to(imprintyellow, {duration:0, xPercent:-100, dely:0});  
+        gsap.to(ppyellow, {duration:0, xPercent:-100, dely:0});
           
-        
+         gsap.to(logosmall, {duration:0, opacity:1, display:"block", delay:0});
           
-        gsap.to(homegreen, {duration:0, xPercent:-100, opacity:1, delay:0});  
-        gsap.to(imprintgreen, {duration:0, xPercent:-100, opacity:1, delay:0});  
-        gsap.to(ppgreen, {duration:0, xPercent:-100, opacity:1,delay:0});  
-        gsap.to(balkengreen, {duration:0, xPercent:-100,opacity:1, delay:0});  
-       
-        gsap.to(homeyellow, {duration:0, xPercent:-100, delay:0});  
-        gsap.to(imprintyellow, {duration:0, xPercent:-100, delay:0});  
-        gsap.to(ppyellow, {duration:0, xPercent:-100, delay:0});
           
-        gsap.to(logosmall, {duration:0, opacity:0, display:"none", delay:0});       
-          
-        
- 
-   
+         
       </script> 
-                                     
-                     
-       
-    <script>  
+                             
+                                      
+                   
+      
+   <script>  
     const burger = document.getElementById('burger');  
     let isOpen = false;  
  
@@ -141,19 +147,13 @@
         gsap.to(bar1, {rotate: 0,y:0, duration: 0.25, delay:0,ease:"power1.InOut",}); 
         gsap.to(bar3, {width:"auto", duration: 0.25, delay:0.25,ease:"power1.InOut",}); 
         gsap.to(bar5, {rotate: 0,y:0, duration: 0.25,ease:"power1.InOut",});
-        gsap.to(logo, {yPercent:0, ease:"power4.Out", duration: 0.5, delay:0.55}); 
-         
-        gsap.to(logosmall, {display:"none", duration: 0, delay:0.5});    
-        gsap.to(logosmall, {opacity:0, ease:"power4.Out", duration: 0.5}); 
-              
+        
           
-        gsap.to(form, {display:"flex", duration: 0, delay:0});
-        gsap.to(form, {opacity:1, duration: 0.5, delay:0});  
-         
-        gsap.to(there, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.6});  
-        gsap.to(hello, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.55});  
-        gsap.to(balkenyellow, {duration: 0.5, xPercent:0,ease:"power4.Out",delay:0.55});    
           
+         
+        gsap.to(copyholder, {display:"block", duration: 0, delay:0.55});  
+        gsap.to(copyholder, {opacity:"1", ease:"power4.Out", duration: 0.5, delay:0.55}); 
+               
         gsap.to(ppgreen, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.15});  
         gsap.to(imprintgreen, {duration: 0.5, xPercent:-100,ease:"power4.In",delay:0.1});  
         gsap.to(homegreen, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.05});        
@@ -165,27 +165,20 @@
         gsap.to(homeyellow, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0.05});  
       
         gsap.to(burger, { pointerEvents: "auto", duration:0, delay:1.1});   
-    
-  
-        isOpen = false; 
+      
+      
+        isOpen = false;  
       } else {   
         gsap.to(burger, { pointerEvents: "none", duration:0}); 
         gsap.to(bar1, {rotate: 45,y:"200%", duration: 0.25, delay:0.25,ease:"power1.InOut",});  
         gsap.to(bar3, {width: 0, duration: 0.25, delay:0,ease:"power1.InOut",});
         gsap.to(bar5, {rotate: -45,y:"-200%", duration: 0.25, delay:0.25,ease:"power1.InOut",}); 
-        gsap.to(logo, {yPercent:-100,ease:"power4.In", duration: 0.5});
-          
-        gsap.to(logosmall, {display:"block", duration: 0, delay:0.55});  
         
-        gsap.to(form, {opacity:0, duration: 0.5, delay:0});   
-        gsap.to(form, {display:"none", duration: 0, delay:0.5});    
-
-        gsap.to(logosmall, {opacity:1,ease:"power4.In", duration: 0.5, delay:0.55});  
-                            
-        gsap.to(there, {duration: 0.5, xPercent:-100,ease:"power4.In",delay:0.05});  
-        gsap.to(hello, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0});  
-        gsap.to(balkenyellow, {duration: 0.5, xPercent:-100,ease:"power4.In", delay:0});  
           
+        
+        gsap.to(copyholder, {opacity:"0", ease:"power4.Out", duration: 0.5, delay:0});  
+        gsap.to(copyholder, {display:"none", duration: 0, delay:0.5});   
+ 
         gsap.to(ppgreen, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.65});        
         gsap.to(imprintgreen, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.6});  
         gsap.to(homegreen, {xPercent:0, ease:"power4.Out", duration: 0.5, delay:0.55});        
@@ -198,13 +191,14 @@
        gsap.to(burger, { pointerEvents: "auto", duration:0, delay:1.1});  
       
           
-        isOpen = true;  
+        isOpen = true; 
       }   
     }); 
         
           </script>  
+
        
-       
+      
       
       <script>
         
@@ -226,7 +220,7 @@ var elem = document.getElementById('ppgreen');
         
          
   </script>     
-       
+        
       <script>
         
 var elem = document.getElementById('imprintgreen'); 
@@ -246,9 +240,10 @@ var elem = document.getElementById('imprintgreen');
   }
         
         
-  </script> 
+  </script>  
       
-      <script>
+      
+        <script>
         
 var elem = document.getElementById('homegreen'); 
   elem.addEventListener('mouseover', mouseOver); 
@@ -270,7 +265,7 @@ var elem = document.getElementById('homegreen');
   </script> 
       
       
-      <script>
+     <script>
       
     document.getElementById("imprintgreen").addEventListener("click", openimprint);
 
@@ -293,13 +288,12 @@ function isMobileDevice() {
       
       </script>
       
-      
-       <script>
+     <script>
       
     document.getElementById("homegreen").addEventListener("click", openhome);
 
 function openhome() {
-  if (isMobileDevice()) {
+  if (isMobileDevice()) { 
     setTimeout(function() {
       window.location = "index.html";
     }, 500);
@@ -307,17 +301,17 @@ function openhome() {
     setTimeout(function() {
       window.location = "index.html";
     }, 0);
-  }
+  } 
 }
 
 function isMobileDevice() {
   return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 }
-
+ 
+       
+      </script>  
       
-      </script> 
-      
-     <script>
+      <script>
       
     document.getElementById("ppgreen").addEventListener("click", openpp);
 
@@ -338,57 +332,25 @@ function isMobileDevice() {
 }
  
        
-      </script>  
-
-<script>
+      </script> 
+       
+      <script>
      window.addEventListener('load', function() {
   setTimeout(function() {
-    document.querySelector('.loadingscreen').style.display = 'none'; 
+    document.querySelector('.loadingscreen').style.display = 'none';
     document.querySelector('.pagecontent').style.display = 'block';
   }, 3000);
    
-   
-});    
-      </script>
-      
-   
-   
-      <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyt5Gt4M58jTOpdoSqXUvwxXpaL3rm-LwfTWaSd_QDPgxgY7bktQDjezD3cm-vgQzVS/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const load = document.getElementById('load');
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    const submitButton = form.querySelector('button[type="submit"]');
-    document.getElementById("load1").style.display = 'block'; 
-    document.getElementById("load2").style.display = 'block'; 
-    document.getElementById("load3").style.display = 'block'; 
   
-    document.getElementById("arrow").style.display = 'none'; 
-    submitButton.disabled = true;
-        submitButton.style.cursor = 'default';
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)}) 
-      .then(response => {
-        form.querySelectorAll('input, button').forEach(el => {
-          el.disabled = true;
-        });
-        
-        form.querySelector('input[name="email"]').placeholder = 'Thanks, that worked';
-        form.reset();
-        document.getElementById("arrow").style.display = 'none'; 
-        document.getElementById("heart").style.display = 'block'; 
-        document.getElementById("load1").style.display = 'none'; 
-    document.getElementById("load2").style.display = 'none'; 
-    document.getElementById("load3").style.display = 'none';
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
+});   
+      </script>
+   
+          
+      
   
   </body>   
     
-      
+     
      
 </html> 
  
